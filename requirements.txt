@@ -7,3 +7,7 @@ pypdf2==3.0.1 \
     --hash=sha256:be96470cc9209a56a799824e33cd6ab5b88d92dcd9c020d9c09eb819d0a1d418 \
     --hash=sha256:f01293156f2153a32ca47603412531aad4e162af3076fcca254c80f734a7dcc4
     # via -r requirements.in
+sqlparse==0.5.5 \
+    --hash=sha256:089ca2b2ac58e83fb545b1c9cbb1b2ea06088c9491dbd886fb80c9123bf62ac7 \
+    --hash=sha256:8733df00ad1b5d3de87310d9c8d3a0a95eac011d8441f6720e18471193fc04c8
+    # via -r requirements.in
