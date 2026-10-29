@@ -1,18 +1,26 @@
 {
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+  "pip-compile": {
+    "managerFilePatterns": ["/(^|/)requirements\\.txt$/"]
+  },
+  "pip_requirements": {
+    "enabled": false
+  },
+  "pip_setup": {
+    "enabled": false
+  },
   "packageRules": [
     {
-      "description": "Workaround for renovate#19908: --extra-index-url is dropped when --index-url is set",
-      "matchManagers": ["pip_requirements", "pip-compile"],
+      "matchManagers": ["pip-compile"],
+      "rangeStrategy": "update-lockfile"
+    },
+    {
+      "description": "Look up Python packages on the Lightwell indexes",
+      "matchDatasources": ["pypi"],
       "registryUrls": [
         "https://packages.redhat.com/lightwell/python/remediated/simple",
         "https://packages.redhat.com/lightwell/python/validated/simple"
       ]
-    },
-    {
-      "description": "Workaround: ==x.y.z matches local versions (x.y.z+rhlw.n), so 'replace' resolves currentVersion to the local version and skips the update. 'bump' resolves to the lowest satisfying version instead.",
-      "matchManagers": ["pip_requirements", "pip-compile"],
-      "rangeStrategy": "bump"
     }
   ]
 }
