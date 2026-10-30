@@ -3,11 +3,11 @@
 --index-url https://packages.redhat.com/lightwell/python/validated/simple
 --extra-index-url https://packages.redhat.com/lightwell/python/remediated/simple
 
-pypdf2==3.0.1 \
-    --hash=sha256:be96470cc9209a56a799824e33cd6ab5b88d92dcd9c020d9c09eb819d0a1d418 \
-    --hash=sha256:f01293156f2153a32ca47603412531aad4e162af3076fcca254c80f734a7dcc4
+pypdf2==3.0.1+rhlw.1 \
+    --hash=sha256:762ed09812cb14c868ab98b215f7d3068d9c495dd2bc2ad50907eece1bc687d3 \
+    --hash=sha256:eef7dcfe76a155a678c72b90177d4751378f3bd532b14460afb82bbabe19e103
     # via -r requirements.in
-sqlparse==0.5.5 \
-    --hash=sha256:089ca2b2ac58e83fb545b1c9cbb1b2ea06088c9491dbd886fb80c9123bf62ac7 \
-    --hash=sha256:8733df00ad1b5d3de87310d9c8d3a0a95eac011d8441f6720e18471193fc04c8
+sqlparse==0.5.5+rhlw.1 \
+    --hash=sha256:8b527d29e503538ad256c821c3a394173cab597f435d3f22ebe22c16b4737a2d \
+    --hash=sha256:ce4454e60e73cd9d29a9fa8b7140ba88bb13cb2f048ea9149464f09806d17660
     # via -r requirements.in
